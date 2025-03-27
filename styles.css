@@ -292,3 +292,51 @@ footer {
         height: 120px;
     }
 }
+/* Hide the menu by default on mobile */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: none; /* Hide menu initially */
+    flex-direction: column;
+    text-align: center;
+    background: #222;
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+/* Show the menu when active */
+nav ul.active {
+    display: flex;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+
+/* Show the hamburger menu only on small screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none; /* Hide menu by default */
+    }
+}
