@@ -253,3 +253,90 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+/* 🟢 Fix Navbar on Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* 🟢 Adjust Main Content Padding */
+main {
+    padding: 100px 15px;
+    max-width: 100%;
+}
+
+/* 🟢 Fix Containers for Mobile */
+.container {
+    padding: 20px;
+    margin: 15px auto;
+    width: 90%;
+}
+
+/* 🟢 Responsive Buttons */
+.btn {
+    width: 90%;
+    font-size: 1rem;
+    padding: 12px;
+}
+
+/* 🟢 Profile Picture Mobile Adjustments */
+.profile-pic {
+    width: 130px;
+    height: 130px;
+}
+
+/* 🟢 Fixing Text Sizes */
+h1, h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* 🟢 Adjusting Skills Section */
+.skills-list li {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+/* 🟢 Social Media Icons on Mobile */
+.social-links img {
+    width: 36px;
+    height: 36px;
+}
+
+/* 🟢 Projects Section Responsive */
+.project {
+    width: 90%;
+}
+
+/* 🟢 Fix Resume Section */
+.resume iframe {
+    height: 500px;
+}
+
+/* 🟢 Footer Adjustments */
+footer {
+    font-size: 14px;
+    padding: 12px;
+}
+
+/* 🟢 Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
